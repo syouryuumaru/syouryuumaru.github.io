@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<head>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+<link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+
+    
+    
+    <title>Komponen Aktif dan Komponen Pasif Elektronika - Vno Hugo</title>
+    
+    
+    <meta name="author" content="onevcat" /> 
+     
+    
+    <meta name="description" content="Vno Hugo is a port of Vno Jekyll." /> 
+    
+    
+    <meta name="keywords" content="Stemba" />
+    
+    <meta property="og:title" content="Komponen Aktif dan Komponen Pasif Elektronika" />
+<meta property="og:description" content="Komponen elektronika adalah elemen dasar yang digunakan untuk membentuk suatu rangkaian elektronika dan biasanya dikemas dalam bentuk diskrit dengan dua atau lebih terminal penghubung. Setiap komponen elektronika memiliki fungsinya masing-masing dalam suatu rangkaian elektronika, ada yang berfungsi sebagai penghambat, ada yang berfungsi sebagai penguat, ada yang sebagai penghantar, ada juga yang berfungsi sebagai penyaring dan sebagai pengendali. Komponen-komponen elektronika tersebut juga memiliki nilai dan tipenya masing-masing sehingga dapat menjalankan fungsinya sesuai dengan keinginan para perancang rangkaian elektronika." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://syouryuumaru.github.io/blog/2021/08/komponen-aktif-dan-komponen-pasif-elektronika/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-08-26T16:02:08+07:00" />
+<meta property="article:modified_time" content="2021-08-26T16:02:08+07:00" />
+
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Komponen Aktif dan Komponen Pasif Elektronika"/>
+<meta name="twitter:description" content="Komponen elektronika adalah elemen dasar yang digunakan untuk membentuk suatu rangkaian elektronika dan biasanya dikemas dalam bentuk diskrit dengan dua atau lebih terminal penghubung. Setiap komponen elektronika memiliki fungsinya masing-masing dalam suatu rangkaian elektronika, ada yang berfungsi sebagai penghambat, ada yang berfungsi sebagai penguat, ada yang sebagai penghantar, ada juga yang berfungsi sebagai penyaring dan sebagai pengendali. Komponen-komponen elektronika tersebut juga memiliki nilai dan tipenya masing-masing sehingga dapat menjalankan fungsinya sesuai dengan keinginan para perancang rangkaian elektronika."/>
+
+
+    
+    
+    <link rel="stylesheet" href="https://syouryuumaru.github.io/blog/scss/main.min.14635237847ee06fac20c60448319b125af2da01a23efd86ed8c80affa4f8353.css" integrity="sha256-FGNSN4R&#43;4G&#43;sIMYESDGbElry2gGiPv2G7YyAr/pPg1M=" crossorigin="anonymous" media="screen">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css" />
+    
+    
+
+
+</head>
+  
+</head>
+<body>
+  <span class="mobile btn-mobile-menu">
+
+    <i class="fa fa-list btn-mobile-menu__icon"></i>
+    <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+
+  </span>
+
+  <header class="panel-cover  panel-cover--collapsed " style="background-image: url('/images/background-cover.jpg')">
+    <div class="panel-main">
+  
+      <div class="panel-main__inner panel-inverted">
+      <div class="panel-main__content">
+  
+          <a href="/#blog" title="前往 Vno Hugo 的主页" class="blog-button"><img src="/images/avatar.jpg" width="80" alt="Vno Hugo logo" class="panel-cover__logo logo" /></a>
+          <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for Vno Hugo" class="blog-button">Vno Hugo</a></h1>
+          
+          <span class="panel-cover__subtitle panel-subtitle">A blog-orientation theme for Hugo</span>
+          
+          <hr class="panel-cover__divider" />
+          <p class="panel-cover__description">Vno Hugo is a port of Vno Jekyll.</p>
+          <hr class="panel-cover__divider panel-cover__divider--secondary" />
+          
+          
+          <p class="panel-cover__description">Oh What a World</p>
+          
+          
+          <div class="navigation-wrapper">
+            <div>
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="/#blog" title="Blog" class="blog-button">Blog</a></li>
+                  
+                    <li class="navigation__item"><a href="http://project.onevcat.com/" target="_blank" title="Projects">Projects</a></li>
+                  
+                </ul>
+              </nav>
+            </div>
+            
+            <div><nav class="cover-navigation navigation--social">
+    <ul class="navigation">
+  
+    
+    
+    <li class="navigation__item">
+      <a href="http://weibo.com/onevcat" title="@onevcat 的微博" target="_blank">
+        <i class='social fa fa-weibo'></i>
+        <span class="label">Weibo</span>
+      </a>
+    </li>
+    
+  
+    
+    
+    <li class="navigation__item">
+      <a href="https://github.com/onevcat" title="@onevcat 的 Github" target="_blank">
+        <i class='social fa fa-github'></i>
+        <span class="label">Github</span>
+      </a>
+    </li>
+    
+    
+    
+    
+    <li class="navigation__item">
+      <a href="http://twitter.com/onevcat" title="@onevcat" target="_blank">
+        <i class='social fa fa-twitter'></i>
+        <span class="label">Twitter</span>
+      </a>
+    </li>
+    
+  
+    
+    
+    <li class="navigation__item">
+      <a href="https://plus.google.com/107108267983477358170" rel="author" title="Google+" target="_blank">
+        <i class='social fa fa-google-plus-square'></i>
+        <span class="label">Google Plus</span>
+      </a>
+    </li>
+    
+  
+    
+    <li class="navigation__item">
+      <a href="/index.xml" rel="author" title="RSS" target="_blank">
+        <i class='social fa fa-rss'></i>
+        <span class="label">RSS</span>
+      </a>
+    </li>
+  
+    
+    
+    <li class="navigation__item">
+      <a href="mailto:onev@onevcat.com" title="Contact me">
+        <i class='social fa fa-envelope'></i>
+        <span class="label">Email</span>
+      </a>
+    </li>
+    
+  
+    </ul>
+  </nav>
+  </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="panel-cover--overlay cover-red"></div>
+      
+    </div>
+  </header>
+  
+
+  <div class="content-wrapper">
+    <div class="content-wrapper__inner">
+
+        
+<article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <div class="post-meta">
+            <time datetime=" 2021-08-26 16:02:08 &#43;0700 " itemprop="datePublished" class="post-meta__date date">2021-08-26</time>
+             <span class="post-list__meta--tags tags">• Stemba</span> 
+        </div>
+        <h1 class="post-title">Komponen Aktif dan Komponen Pasif Elektronika</h1>
+    </header>
+    <section class="post">
+        <p>Komponen elektronika adalah elemen dasar yang digunakan untuk membentuk suatu rangkaian elektronika dan biasanya dikemas dalam bentuk diskrit dengan dua atau lebih terminal penghubung. Setiap komponen elektronika memiliki fungsinya masing-masing dalam suatu rangkaian elektronika, ada yang berfungsi sebagai penghambat, ada yang berfungsi sebagai penguat, ada yang sebagai penghantar, ada juga yang berfungsi sebagai penyaring dan sebagai pengendali. Komponen-komponen elektronika tersebut juga memiliki nilai dan tipenya masing-masing sehingga dapat menjalankan fungsinya sesuai dengan keinginan para perancang rangkaian elektronika.</p>
+<h3 id="a-komponen-aktif-elektronika">A. Komponen Aktif Elektronika</h3>
+<ol>
+<li>
+<p>Pengertian Komponen Aktif Elektronika</p>
+<ul>
+<li>
+<p>Komponen Aktif Elektronika adalah jenis komponen elektronika yang memerlukan arus eksternal untuk dapat beroperasi. Komponen elektronika aktif hanya dapat berfungsi apabila mendapatkan sumber arus listrik dari luar (eksternal).</p>
+</li>
+<li>
+<p>Komponen-komponen elektronika yang digolongkan sebagai komponen aktif yaitu dioda, transistor dan IC (Intragrated Circuit) yang terbuat dari bahan semikonduktor seperti silikon, germanium, selenium dan metal oxides.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Jenis-Jenis Komponen Aktif Elektronika</p>
+<ul>
+<li><a href="https://cerdika.com/dioda/">DIODA</a></li>
+</ul>
+<p><img src="https://3.bp.blogspot.com/-3OsHQ1cXXXU/XFr2Q5yAo9I/AAAAAAAAGHU/FNyBosFpCbIW2uH7Bqzq9KjWM4W8M8z1gCEwYBhgL/s1600/Untitled-1.jpg" alt="testing"></p>
+<ol>
+<li>
+<p>Pengertian:</p>
+<p>Dioda (diode) yaitu komponen elektronika aktif yang terbuat dari bahan semikonduktor dan punya fungsi buat menghantarkan arus listrik ke satu arah, tapi menghambat arus listrik dari arah sebaliknya.</p>
+</li>
+<li>
+<p>Fungsi:</p>
+<ul>
+<li>Sebagai alat sensor panas, misalnya dalam amplifier</li>
+<li>Sebagai sekering(saklar) atau pengaman</li>
+<li>Sebagai rangkaian clamper bisa memberikan tambahan partikel DC buat sinyal AC</li>
+<li>Sebagai menstabilkan tegangan pada voltage regulator</li>
+<li>Sebagai penyearah</li>
+<li>Sebagai indikator</li>
+<li>Sebagai alat menggandakan tegangan</li>
+<li>Sebagai alat sensor cahaya, biasanya memakai dioda photo</li>
+<li>Sebagai sebuah rangkaian VCO (Voltage Controlled Oscilator) biasanya memakai dioda varactor.</li>
+</ul>
+</li>
+<li>
+<p>Jenis-jenis dioda:</p>
+<ul>
+<li>
+<p>Dioda Zener, dioda jenis ini mengalirkan arus listrik searah. Dioda Zener juga bisa mengalirkan suatu arus listrik ke arah yang berlawanan. Dioda ini juga mempunyai fungsi sebagai penstabil tegangan di rangkaian elektronika.
+<img src="https://cerdika.com/wp-content/uploads/2020/01/Dioda-Zener-760x578.jpg" alt="1"></p>
+</li>
+<li>
+<p>Dioda Varactor dipakai pada pesawat penerima radio ataupun televisi pada bagian pengaturan suara atau audio.
+<img src="https://cerdika.com/wp-content/uploads/2020/01/Dioda-Varactor-760x589.jpg" alt="2d"></p>
+</li>
+<li>
+<p>Dioda Penyearah (Rectifier) menyearahkan tegangan, jika ingin merubah suatu tegangan bolak – balik (AC) menjadi tegangan searah (DC). Dioda ini yang paling lebih dulu dikenalkan. fungsi dioda penyearah adalah sebagai sensor suhu, sebagai penyearah arus atau sinyal AC, sebagai alat pemotong level, sebagai penurun tegangan, sebagai pengaman polaritas yang sangat terbalik dalam input DC.
+<img src="https://cerdika.com/wp-content/uploads/2020/01/Dioda-Penyearah-Rectifier-760x596.jpg" alt="3"></p>
+</li>
+<li>
+<p>Dioda LED (Emisi Cahaya) berfungsi seperti sebuah transmisi sinyal cahaya yang dimodulasikan dalam jarak tertentu, sebagai penggandeng rangkaian suatu elektronik yang terisolir secara total.
+<img src="https://cerdika.com/wp-content/uploads/2020/01/Dioda-LED-760x576.jpg" alt="4"></p>
+</li>
+<li>
+<p>PIN Dioda ada sebuah area semikonduktor intrinsic (tanpa doping) yang terleatak antara P dan N junction. Efek dari penambahan area intrinsic tersebut yaitu dengan melebarnya area deplesi yang membatasi pergerakan elektron dan dipakai untuk suatu aplikasi sinyal (switching).
+<img src="https://1.bp.blogspot.com/-o7Z4Dn6airg/Xbv9DV_Ph8I/AAAAAAAAJK0/RXdNroOfQCUwXu7hDSHhm7SSUB3Pz0twgCLcBGAsYHQ/s320/PIN.png" alt="5"></p>
+</li>
+<li>
+<p>Gunn Dioda merupakan jenis dioda yang tidak mempunyai PN Junction, hanya terdiri dari 2 elektrodanya saja. Dioda jenis gunn ini, bisa dipakai untuk menghasilkan sinyal gelombang mikro.
+<img src="https://cerdika.com/wp-content/uploads/2020/01/Dioda-Gunn-760x580.jpg" alt="6"></p>
+</li>
+<li>
+<p>Dioda Photo (Dioda Cahaya) mempunya fungsi sebagai sensor seperti sensor alarm, pengukuran cahaya, dan pembacaan pita berlubang.
+<img src="https://cerdika.com/wp-content/uploads/2020/01/Dioda-Photo-Dioda-Cahaya-760x607.jpg" alt="7"></p>
+</li>
+<li>
+<p>BARITT Dioda (Barrier Injection Transit Time) merupakan suatu jenis dioda yang bekerja dengan prinsip emisi termionik. Dioda Baritt dipakai untuk memproduksi sinyal gelombang mikro dengan level derau yang rendah.
+<img src="https://www.rfwireless-world.com/images/BARITT-diode-structure.jpg" alt="8"></p>
+</li>
+<li>
+<p>Dioda Tunnel yaitu jenis dioda yang bekerja memanfaatkan salah satu fenomena mekanika kuantum yaitu tunneling. Tunnel junction ini juga dipakai sebagai salah satu komponen pada osilator, penguat, atau pencampur sinyal, terutama karena kecepatannya yang bereaksi terhadap perubahan tegangan.
+<img src="https://cerdika.com/wp-content/uploads/2020/01/Dioda-Tunnel-760x589.jpg" alt="9"></p>
+</li>
+<li>
+<p>Dioda Laser merupakan jenis dioda yang menghasilkan cahaya, tetapi cahaya yang dihasilkan yaitu cahaya koheren. Aplikasi dioda laser ini adalah suatu perangkat pembaca CD dan DVD dan laser pointer.
+<img src="https://cerdika.com/wp-content/uploads/2020/01/Dioda-Laser-760x613.jpg" alt="10"></p>
+</li>
+<li>
+<p>Dioda PN Junction yaitu salah satu bentuk dari dioda yang umum dipakai di pasaran (disebut juga dioda generik), sering dipakai terutama sebagai penyearah arus.
+<img src="https://cerdika.com/wp-content/uploads/2020/01/Dioda-PN-Junction-760x628.jpg" alt="11"></p>
+</li>
+<li>
+<p>Dioda Schottky diberikan tambahan metal pada permukaan bagian tengah semikonduktor. Karakter yang menjadi keunggulan dari dioda ini yaitu tegangan aktivasi yang rendah dan waktu pemulihan yang singkat. Dioda Schottky sangat umum dipakai untuk suatu rangkaian elektronik berfrekuensi tinggi seperti perangkat-perangkat radio dan gerbang logika.
+<img src="https://cerdika.com/wp-content/uploads/2020/01/Dioda-Schottky-760x622.jpg" alt="12"></p>
+</li>
+<li>
+<p>Dioda Backward mempunyai karakter seperti tunnel, bedanya ada pada suatu sisi yang diberi doping lebih rendah dibanding sisi yang berlawanan. Perbedaan profil doping ini bisa membuat backward dioda mempunyai karakter tegangan arus yang sama pada suatu kondisi reverse dan forward.
+<img src="https://1.bp.blogspot.com/-ti2gI1k1CjQ/Xb-2HpZPYLI/AAAAAAAAJT8/dC3mAbGkx04MG9iykXYGkKU220khI-3MQCLcBGAsYHQ/s1600/Backward-Diode.jpg" alt="13"></p>
+</li>
+<li>
+<p>Dioda Step Recovery, bagian semikonduktor pada dioda ini juga punya level doping yang secara gradual menurun dengan titik terendah di junction. Modifikasi ini bisa mengurangi waktu switching karena pada muatan yang ada pada daerah junction lebih sedikit. Aplikasi dari semikonduktor ini ada pada bagian alat-alat elektronik frekuensi radio.
+<img src="https://cerdika.com/wp-content/uploads/2020/01/Dioda-Step-Recovery-760x581.jpg" alt="14"></p>
+</li>
+<li>
+<p>Dioda Bridge yaitu sebuah komponen yang berisi 4 buah dioda yang berguna umtuk mengatur arah polaritas DC yang keluar dari kaki DC supaya tidak terjadi pembalikan fase saat sumber arus listrik AC dibalik atau ditukar. Didalam sebuah dioda bridge, ada 4 buah terminal diantaranya yaitu 2 buah terminal AC sebagai input sumber arus. Sedangkan 2 kaki lainnya yaitu arus DC positif dan negatif.
+<img src="https://cerdika.com/wp-content/uploads/2020/01/Dioda-Bridge-760x595.jpg" alt="15"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Karakteristik Dioda:</p>
+<ul>
+<li>Dioda Bias Maju, karakter dioda bias maju ini untuk memberikan tegangan luar menuju terminal dioda. Jika anoda (+) terhubung ke kutub positif pada baterai dan katoda (-) terhubung ke kutub negatif pada baterai, maka akan mengakibatkan bias maju atau forward bias.</li>
+<li>Dioda Bias Mundur, karakter dioda bias secara mundur yaitu jika anoda (+) dihubungkan ke kutub negatif dan katoda (-) dihubungan ke kutub positif jadi jumlah arus yang mengalir pada rangkaian bias mundur akan lebih kecil. Pada dioda bias mundur, ada arus maju yang dihubungkan ke baterai yang mempunyai tegangan tidak terlalu besar dan signifikan, karena tidak mengalami peningkatan. Lalu saat terjadi proses reserve, dioda tidak bisa menghantarkan listrik karena nilai hambatannya besar. Dioda ini juga dianjurkan untuk tidak punya besar tegangan dan arus yang melebihi batas.
+<img src="https://cerdika.com/wp-content/uploads/2020/01/Karakteristik-Dioda-760x581.jpg" alt="bias"></li>
+</ul>
+</li>
+<li>
+<p>Cara Kerja Dioda:</p>
+<p>Dioda semikonduktor ini hanya bisa melewati satu arus yang searah pada saat dioda memperoleh arus akan maju satu arah (forward bias). Karena di dalam dioda ada junction yaitu pertemuan konduktor antara tipe P dan tipe N. Kondisi ini bisa dibilang jika konduksi penghantar masih tergolong kecil sedangkan jika dioda diberi satu arah/bias mundur (reverse bias) maka, dioda tidak bekerja dan pada kondisi ini dioda mempunyai tahanan dalam yang tinggi menjadi arus yang sulit mengalir. Apabila dioda silicon dialiri arus AC, maka yang mangalir hanya satu arah aja, jadi arus output dioda berupa arus DC. Dari kondisi tersebut, maka dioda dipakai pada beberapa pemakaian seperti penyearah setengah gelombang (Half Wave Rectifier), dan penyearah gelombang penuh (Full Wave Rectifier).
+<img src="https://cerdika.com/wp-content/uploads/2020/01/Cara-Kerja-Diodaa-760x593.jpg" alt="cara"></p>
+</li>
+<li>
+<p>Simbol Dioda:</p>
+<p><img src="https://cerdika.com/wp-content/uploads/2020/01/Simbol-Dioda-760x609.jpg" alt="dioda"></p>
+</li>
+</ol>
+<ul>
+<li><a href="https://www.teknikelektro.com/2020/07/jenis-fungsi-dan-cara-kerja-transistor.html">TRANSISTOR</a></li>
+</ul>
+<ol>
+<li>
+<p>Pengertian:</p>
+<p>Transistor adalah sebuah komponen elektronika yang mempunyai berbagai macam fungsi diantaranya sebagai saklar, penguat sinyal, osilator, modulator dan sebagainya. Komponen elektronika ini terbuat dari bahan semikonduktor seperti silikon. Transistor juga menjadi dasar dari gerbang logika yang kita kenal sekarang dimana kumpulan mosfet berubah menjadi IC (Integrated Circuit), dan kumpulan dari IC berubah menjadi sebuah Mikroprosesor.
+<img src="https://akumaubelajar.com/wp-content/uploads/2021/05/gambar-transistor.jpg" alt="trans"></p>
+</li>
+<li>
+<p>Jenis-Jenis Transistor:</p>
+<ul>
+<li>Transistor Bipolar (BJT)</li>
+</ul>
+<p>Transistor bipolar adalah jenis transistor yang prinsip kerjanya membutuhkan perpindahan muatan pembawanya yaitu elektron di kutub negatifnya untuk mengisi kekurangan elektron atau hole di kutub positifnya. Bipolar berasal dari dua kata yaitu &ldquo;bi&rdquo; yang berarti dua dan &ldquo;polar&rdquo; yang artinya adalah kutub karena memang transistor ini memiliki 2 polaritas kutub yaitu P dan N. Transistor jenis ini disebut juga dengan Bipolar Junction Transistor yang memiliki akronim BJT. Berdasarkan input basisnya transistor bipolar terdapat 2 macam yaitu transistor npn dan transistor pnp. Kedua transistor sama-sama memiliki tiga kaki/pin yaitu Basis, Collector dan Emitter.</p>
+<pre><code> A. Transistor NPN
+</code></pre>
+<p>Transistor NPN adalah transistor yang membutuhkan arus kecil dan tegangan positif untuk mengendalikan terminal lainnya melalui terminal Basis (Dasar). Pada transistor NPN arus dan tegangan besar yang dikendalikan mengalir dari kaki/pin Emitter menuju Collector. Contoh transistor NPN diantaranya transistor bc547, transistor 2n2222, transistor c945, transistor c1815 dan lain-lainnya.</p>
+<pre><code> B. Transistor PNP
+</code></pre>
+<p>Transistor PNP adalah transistor yang menggunakan arus kecil dan tegangan negatif sebagai input Basisnya untuk mengendalikan tegangan dan arus yang lebih besar yang mengalir dari kaki/pin Collector menuju kaki/pin Emitter. Contoh transistor PNP diantaranya seperti transistor bc557, transistor 2n5401, transistor 2n3906 dan lain-lainnya.
+<img src="https://1.bp.blogspot.com/-rGlQ9VvQxbs/Xu22oRVqLdI/AAAAAAAAA4Q/fI24xFOhNlIaz7IgRNWJvd2OKf-hk00KgCPcBGAYYCw/s400/tr.png" alt="npnpnp"></p>
+<ul>
+<li>Transistor Efek Medan (FET)</li>
+</ul>
+<p>Transistor Efek Medan atau FET adalah komponen semikonduktor dengan tipe unipolar karena pengoperasiannya hanya membutuhkan salah satu muatan pembawa saja, muatan pembawa dapat berupa elektron saja ataupun hole saja. Transistor FET hanya menggunakan tegangan listrik sebagai input bias pada terminal Gate (G) untuk mengendalikan arus dan tegangan yang lebih besar dari terminal Drain (D) ke terminal Source (S). Kelebihan utama dari transistor ini yaitu memiliki impedansi yang sangat tinggi dan resistansi bagian input dan outputnya dapat mencapai mega ohm. Jika dibandingkan dengan transistor BJT, transistor FET memiliki konsumsi daya yang rendah, temperatur kerja yang rendah serta merupakan transistor dengan efisiensi daya yang tinggi sehingga harganya pun lebih mahal.</p>
+<pre><code> A. JFET (Junction Field Effect Transistor)
+</code></pre>
+<p>Junction Field Effect Transistor atau JFET adalah jenis transistor efek medan yang menggunakan persimpangan (junction) p-n bias terbalik sebagai isolator antara Gate (G) dan channel-nya. Transistor JFET memiliki dua tipe channel yaitu p-channel dan n-channel. Untuk membedakannya dapat dilihat dari tanda anak panahnya, pada JFET n-channel tanda anak panah mengarah ke dalam sedangkan pada JFET p-channel tanda anak panah mengarah pada bagian luar. Transistor JFET terdiri dari 3 kaki/pin terminal yang masing-masing terminal dinamakan dengan Gate (G), Source (S), dan Drain (D).
+<img src="https://1.bp.blogspot.com/-u328ZYQMUvg/Xu23t7mBXxI/AAAAAAAAA4Y/3gZJoDx1X6snGWbXElVnoNrJD2Lqh4C8ACLcBGAsYHQ/s400/tr1.png" alt="jfet"></p>
+<pre><code> B. MOSFET (Metal Oxide Semiconductor Field Effect Transistor)
+</code></pre>
+<p>MOSFET adalah transistor efek medan yang menggunakan isolator diantara gerbang atau Gate (G) nya dengan channel, biasanya isolator yang digunakan seperti silikon dioksida (SiO2). MOSFET terdiri dari 2 tipe channel yaitu tipe n-channel dan p-channel. Transistor efek medan ini juga memiliki tiga kaki/pin terminal yang disebut dengan Gate (G), Source (S), dan Drain (D). MOSFET biasanya digunakan pada rangkaian dengan sensitivitas dan akurasi yang tinggi misalnya seperti rangkaian power supply dan inverter. Karena memiliki sensitivitas dan akurasi yang tinggi, karena itulah MOSFET akan mudah rusak jika terkena arus listrik statis.
+<img src="https://1.bp.blogspot.com/-sil4vN-L_F8/Xu26LB06rYI/AAAAAAAAA4s/pBcakQ6rBC8CI_CNN261zi0yHzinn5I0gCLcBGAsYHQ/s400/tr4.png" alt="mosfet"></p>
+<pre><code> C. UJT (Uni Junction Transistor)
+</code></pre>
+<p>Uni Junction Transistor adalah jenis transistor yang juga masih satu kategori transistor efek medan ( Field Effect Transistor/FET) karena yang pada pengoperasiannya masih menggunakan tegangan untuk mengendalikan tegangan yang lebih besar. Tidak seperti FET yang lainnya, Uni Junction Transistor memiliki 2 terminal basis (B1 dan B2) dan memiliki satu terminal emitter. UJT digunakan khusus sebagai pengendali (switch) dan tidak dapat digunakan sebagai penguat seperti jenis transistor yang lainnya.
+<img src="https://1.bp.blogspot.com/-jsyPhCtqkB4/Xu23_vfdDgI/AAAAAAAAA4g/u-hQJwkucG0alxiIp1D8r77aXg_tzYALACLcBGAsYHQ/s400/tr3.png" alt="ujt"></p>
+</li>
+<li>
+<p>Fungsi Transistor:</p>
+<ul>
+<li>
+<p>Sebagai saklar
+<img src="https://1.bp.blogspot.com/-FQQq4_PP2y8/XwAZEPNNLwI/AAAAAAAAA5Y/o--2n3ZssgkY2T6AGe4bEQV9grBlODAqQCK4BGAsYHg/s304/Rangkaian-transistor-sebagai-saklar.jpg" alt="1">
+Rangkaian di atas adalah salah satu rangkaian dasar transistor yang berfungsi sebagai saklar. Seperti yang kita ketahui bahwa transistor memerlukan sebuah pemicu agar dapat mengalirkan arus dan pemicu tersebut adalah arus pada basis. Ketika basis dialiri arus minimal (sesuai datasheet) maka kaki emitor-kolektor akan berfungsi sebagai saklar tertutup dan mengalirkan arus sehingga lampu dapat menyala.</p>
+</li>
+<li>
+<p>Sebagai penguat arus
+<img src="https://1.bp.blogspot.com/-oPfW6O8BbdQ/YQTw40bZcAI/AAAAAAAACnI/mmfLS_W0gKMQTECie3sfGLxHPLJu8r2JQCLcBGAsYHQ/s449/transistor-sebagai-penguaat-arus.jpg" alt="2">
+Salah satu prinsip kerja dari transistor BJT adalah arus kecil pada basis akan berubah menjadi besar pada kolektor. Hal tersebut dikarenakan pada transistor terdapat indikator Hfe / penguatan dimana setiap transistor mempunyai nilai Hfe yang berbeda-beda. Misalkan pada suatu transistor mempunyai Hfe 100 maka ketika arus yang mengalir pada basis adalah 0,6 ampere maka arus yang mengalir pada kolektor menjadi 6 ampere.</p>
+</li>
+<li>
+<p>Sebagai penguat amplifier sinyal
+<img src="https://1.bp.blogspot.com/-iXHvBPHahtw/YQTyAz9XvbI/AAAAAAAACnQ/sblbgXu3P6gAIFMY2owHbdpFlAOF63azACLcBGAsYHQ/s613/transistor-sebagai-penguat-sinyal.jpg" alt="3">
+Rangkaian amplifier adalah suatu rangkaian untuk mengkonversi sinyal berukuran kecil menjadi sinyal berukuran besar. Dari sinyal tersebut yang dibesarkan adalah amplitudonya. Pada rangkaian diatas mikrofon berfungsi untuk merubah energi suara menjadi energi listrik. Sementara itu earphone atau speaker berfungsi untuk merubah energi listrik menjadi suara.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Cara Kerja Transistor:</p>
+<ul>
+<li>Pada transistor BJT cara kerjanya adalah ouput yang mengalir dari Emitor ke Kolektor ditentukan oleh besarnya arus yang mengalir ke basis. Pada datasheet biasanya sudah tertera berapa arus minimal pada basis untuk membuat emitor dan kolektor berfungsi seperti saklar tertutup.</li>
+</ul>
+<p><img src="https://1.bp.blogspot.com/-XgQ4ELEbDJ0/XwAJwlMxWBI/AAAAAAAAA3U/j4kwRpenpiIbnVJ2WpksLcpSTQlRLQXNQCK4BGAsYHg/d/cara-kerja-transistor-BJT-Bipolar-Juction-Transistor.jpg" alt="bjt">
+Untuk lebih detail lagi prinsip kerja dari transistor BJT adalah berdasarkan konsep dari bias maju dan bias mundur pada dioda. Seperti terlihat pada gambar kedua sisi dari transistor adalah N dimana akan selalu mengalami bias mundur jika dialiri sumber. Untuk itu kita perlu trigger (pemicu) untuk membuat elektron dapat bergerak dan pemicu itu adalah bias maju. Jadi pada sisi P dihubungkan sisi positif sumber sehingga terciptalah bias maju dan membuat elektron bergerak. Ketika elektron sudah bergerak maka itu akan memicu untuk semua elektron dapat bergerak sehingga sisa elektron akan bergerak ke arah sumber yang lain.</p>
+<ul>
+<li>Pada Transistor Efek Medan</li>
+</ul>
+<p><img src="https://1.bp.blogspot.com/-YfnJgk0PIGU/XwANUbd03tI/AAAAAAAAA4E/Qze7nP90FVIk-CYRkgutHoZcYio293ktwCK4BGAsYHg/s500/cara-kerja-transistor-FET-Field-Effect-Transistor.jpg" alt="medan"></p>
+<p>Seperti namanya pada transistor ini cara kerjanya menggunakan prinsip gaya tarik medan magnet. Jadi ketika G (Gate) mempunyai sebuah tegangan maka akan timbul medan magnet seperti pada gambar di bawah. Prinsip kerja transistor Efek Medan (Field Effect):</p>
+<p><img src="https://1.bp.blogspot.com/-iTTHq7zd3Wg/XwAOM1zoIZI/AAAAAAAAA4k/cIj7neSbNrkBeEsGACSROWshFTh7kcbqQCK4BGAsYHg/d/cara-kerja-transistor-FET.jpg" alt="medan1"></p>
+<p>Ketika tercipta sebuah medan magnet maka itu akan menjadi trigger untuk elektron dapat bergerak dari kutub negatif (-) ke positif (+). Tegangan minimal Gate (G) untuk bisa membuat Source (S) dan Drain (D) berfungsi seperti saklar tertutup disebut dengan tegangan threshold atau tegangan ambang.</p>
+</li>
+<li>
+<p>Cara Mengukur Transistor:
+<img src="https://1.bp.blogspot.com/-0GB29TY-Xhk/XwApT25pN0I/AAAAAAAAA6Y/q3A41KLGgJQCPoJTcj-ySwvWvY7cjv9fgCK4BGAsYHg/s306/mengukur-transistor.jpg" alt="menghitung"></p>
+<p>Kita dapat mengukur atau memeriksa apakah transistor masih berfungsi dengan menggunakan multimeter. Untuk menguji apakah transistor dalam keadaan baik kita tinggal mengukur tahanan pada kaki Basis(B)-Emitor(E) dan kaki Kolektor(C) - Basis (B). Disini menggunakan ultimeter analog maka cara mengukur transistor PNP dan NPN:</p>
+</li>
+</ol>
+<ul>
+<li>Atur Posisi Saklar pada Posisi OHM (Ω) x1k.</li>
+<li>Hubungkan probe warna Merah pada kaki Basis (B) dan probe Hitam pada kaki Emitor (E), Jika jarum bergerak ke kanan menunjukan nilai tertentu, berarti terdapat resistansi pada resistor yang menandakan bahwa resistor masih berfungsi.</li>
+<li>Kemudian hubungkan Probe Hitam pada kaki Kolektor (C), jika jarum bergerak ke kanan menunjukan nilai resistansi, berarti transistor masih berfungsi.</li>
+</ul>
+<ol start="6">
+<li>
+<p>Karakteristik Transistor:
+<img src="https://1.bp.blogspot.com/-vR4ePHoai0M/XwAdWyodIjI/AAAAAAAAA54/29LolmgrfJccF6RSo4w4xkZXsag5yQ_7ACK4BGAsYHg/s511/karakteristik-transistor.jpg" alt="karak"></p>
+<p>Pada dasarnya transistor mempunyai tiga daerah kerja yang merupakan karakteristiknya yaitu:</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Daerah Potong (cutoff) adalah ketika transistor (daerah Emitor-Kolektor) tidak mengalirkan arus karena pada daerah basis tidak diberi arus. Akibatnya tidak terjadi pergerakan elektron, sehingga transistor berfungsi sebagai saklar terbuka.</p>
+</li>
+<li>
+<p>Daerah saturasi adalah suatu keadaan dimana arus kolektor (IC) mencapai nilai maksimum. Ketika transistor dalam keadaan saturasi (jenuh) maka transistor berfungsi sebagai saklar tertutup.</p>
+</li>
+<li>
+<p>Daerah breakdown merupakan daerah yang tidak boleh terjadi pada transistor karena dapat menyebabkan kerusakan. Kondisi ini terjadi ketika tegangan pada VCE transistor melebihi batas sesuai datasheet.
+Sumber: <a href="https://www.teknikelektro.com/2020/07/jenis-fungsi-dan-cara-kerja-transistor.html">transistor</a>, <a href="https://www.belajaronline.net/2020/06/pengertian-transistor-macam-macam-transistor.html">macam-macam transistor</a>.</p>
+</li>
+<li>
+<p><a href="https://wikielektronika.com/ic-adalah/">IC (Integrated Circuit/Sirkuit Terpadu)</a></p>
+</li>
+</ul>
+<p><img src="https://teknikelektronika.com/wp-content/uploads/2014/08/Semikonduktor.jpg?x79716" alt="ic"></p>
+<ol>
+<li>
+<p>Pengertian:</p>
+<p>Integrated Circuit atau disingkat dengan IC adalah Komponen Elektronika Aktif yang terdiri dari gabungan ratusan, ribuan bahkan jutaan transistor, dioda, resistor dan kapasitor yang diintegrasikan menjadi suatu rangkaian elektronika dalam sebuah kemasan kecil. IC (Integrated Circuit) pertama kali ditemukan ialah pada tahun 1958. Salah satu karyawan Texas Instrument bernama ‘Jack Kilby’ berhasil menemukan teknologi IC untuk pertama kalinya. Penemuan ini kemudian dikembangkan oleh ‘Robert Noyce’ dimana ia berhasil melakukan fabrikasi IC dengan sistem interkoneksi pada sebuah Chip Silikon.</p>
+</li>
+<li>
+<p>Fungsi:</p>
+<ul>
+<li>
+<p>Penguat sinyal dan daya</p>
+<p>Fungsi IC yang paling sederhana adalah penguat sinyal, daya, dan power. Di alat elektronik misalnya radio, IC dipakai untuk menambah daya tangkap sinyal. Hal yang sama juga berlaku di alat seperti televisi.</p>
+</li>
+<li>
+<p>Regulator</p>
+<p>IC juga mampu bertindak sebagai regulator. Contohnya adalah IC yang digunakan untuk menentukan volume suara. Selain itu, IC juga bertugas mengelola tegangan yang diberikan pada komponen lain agar seimbang.</p>
+</li>
+<li>
+<p>IC untuk microprocessor</p>
+<p>IC merupakan satu chip yang terdiri dari banyak komponen membentuk rangkaian. Karena sangat kecil, Anda tidak akan melihatnya dengan langsung. Chip tersebut disebut juga microprocessor atau sebatas chipset untuk keperluan alat elektronik level tinggi.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Jenis-jenis:</p>
+<ul>
+<li>
+<p>IC Analog</p>
+<p>Jenis jenis IC yang mudah ditemukan adalah analog. Tipe ini mampu menangkap, mengelola, dan menggunakan sinyal gelombang. IC tersebut berfungsi sebagai penguat daya, regulator, multiplier, dan fungsi lain terkait sinyal analog. Contoh IC regulator sering menggunakan tipe ini. berfungsi sebagai penguat daya (Power Amplifier), penguat sinyal (Signal Amplifier), penguat operasional (Operational Amplifier/Op Amp), penguat sinyal mikro (Microwave Amplifier), penguat RF dan IF (RF and IF Amplifier), voltage comparator, multiplier, penerima frekuensi radio (Radio Receiver), regulator tegangan (Voltage Regulator).
+<img src="https://wikielektronika.com/wp-content/uploads/2021/03/IC-Analog.jpg" alt="1"></p>
+</li>
+<li>
+<p>IC Digital</p>
+<p>Jenis selanjutnya adalah digital. Berbeda dari sinyal analog, tipe digital hanya mengenal dua masukan yaitu kode biner 0 dan 1 atau sejenisnya. IC seperti ini dipakai untuk alat elektronik yang kompleks seperti laptop, smartphone, televisi, dsb. Berfungsi sebagai flip-flop, gerbang logika (Logic Gates), timer, counter, multiplexer, calculator, memory, clock, microprocessor (Mikroprosesor), microcontroller
+<img src="https://wikielektronika.com/wp-content/uploads/2021/03/IC-Digital.jpg" alt="2"></p>
+</li>
+<li>
+<p>IC Mixed</p>
+<p>IC berikutnya adalah gabungan analog dan digital di satu komponen. Pada umumnya, tipe ini berfungsi sebagai converter yaitu mengubah analog ke digital dan sebaliknya. Beberapa alat elektronik sangat membutuhkan tipe IC ini untuk memastikan sinyal sesuai dengan sistem yang dipakai. Tipe lain yang juga masih kategori mixed adalah satu IC untuk dua fungsi. Komponen tersebut lebih canggih dari sebatas converter. IC tipe ini mampu menangkap dan mengelola dua tipe sinyal tanpa memakai dua komponen berbeda.
+<img src="https://wikielektronika.com/wp-content/uploads/2021/03/IC-Mixed.jpg" alt="3"></p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h3 id="b-komponen-pasif-elektronika">B. Komponen Pasif Elektronika</h3>
+<ol>
+<li>
+<p>Pengertian Komponen Pasif Elektronika</p>
+<p>Komponen Elektronika Pasif adalah jenis Komponen elektronika yang tidak memerlukan sumber arus listrik eksternal untuk pengoperasiannya. Komponen-komponen elektronika yang digolongkan sebagai komponen pasif diantaranya seperti Resistor, Kapasitor dan Induktor.</p>
+</li>
+<li>
+<p>Jenis-Jenis Komponen Pasif Elektronika</p>
+<ul>
+<li>RESISTOR
+<img src="https://teknikelektronika.com/wp-content/uploads/2014/10/Pengertian-Resistor-dan-Jenis-jenisnya.jpg?x79716" alt="r"></li>
+</ul>
+<ol>
+<li>
+<p>Pengertian:</p>
+<p>Resistor adalah komponen Elektronika Pasif yang memiliki nilai resistansi atau hambatan tertentu yang berfungsi untuk membatasi dan mengatur arus listrik dalam suatu rangkaian Elektronika. Resistor atau dalam bahasa Indonesia sering disebut dengan Hambatan atau Tahanan dan biasanya disingkat dengan Huruf “R”. Satuan Hambatan atau Resistansi Resistor adalah OHM (Ω). Sebutan “OHM” ini diambil dari nama penemunya yaitu Georg Simon Ohm yang juga merupakan seorang Fisikawan Jerman.</p>
+</li>
+<li>
+<p>Fungsi:</p>
+<ul>
+<li>Resistor mengatur nilai tegangan yang sesuai di atasnya karena jatuh tegangan IR</li>
+<li>Resistor memainkan peran penting dalam membatasi jumlah arus pada sirkuit elektronik</li>
+<li>Resistor memberikan tegangan bias yang sesuai ke perangkat aktif</li>
+<li>Resistor mengatur arus di setiap sirkuit elektronik</li>
+<li>Resistor berfungsi sebagai beban di mana outputnya sebagai arus input</li>
+<li>Resistor memberikan stabilisasi bias ketika dikombinasi dengan kapasitor</li>
+<li>Resistor dapat memberikan umpan balik (feedback) pada berbagai sirkuit elektronik.</li>
+</ul>
+</li>
+<li>
+<p>Kode Warna:</p>
+<p>Berdasarkan pembacaan kode warnanya resistor ini dibedakan menjadi 3 jenis yaitu kode warna resistor 4 gelang, kode warna resistor 5 gelang, kode warna resistor 6 gelang:</p>
+<ul>
+<li>Kode Warna Resistor 4 Gelang
+<img src="https://1.bp.blogspot.com/-08ydfxQAt6M/XzEiVfY5_pI/AAAAAAAABoc/yT7GTmQpGXUF32Awob_21j86KAV694ZogCPcBGAYYCw/s452/kode-warna-resistor-4-gelang.jpg" alt="w"></li>
+</ul>
+<p>Terlihat pada gambar bahwa gelang ke-1 menentukan digit pertama, gelang ke-2 menentukan digit kedua, gelang ke-3 menentukan pengali (dikali 101 atau 102 atau 103 dan seterusnya).</p>
+<ul>
+<li>Kode Warna Resistor 5 Gelang
+<img src="https://1.bp.blogspot.com/-BSvVCF1HkmU/XzEpHcEWeXI/AAAAAAAABo4/4rNSVsPG3xE6pFdDaZk_tCcEIzdpDky8gCPcBGAYYCw/s538/kode-warna-resistor-5-gelang.jpg" alt="w1"></li>
+</ul>
+<p>Terlihat pada gambar bahwa gelang ke-1 menentukan digit pertama, gelang ke-2 menentukan digit kedua, gelang ke-3 menentukan digit ketiga, gelang ke-4 menentukan pengali, gelang ke-5 menentukan toleransi.</p>
+<ul>
+<li>Kode Warna Resistor 6 Gelang
+<img src="https://1.bp.blogspot.com/-9V3OTz6qxEw/XzEpNrbhuUI/AAAAAAAABo8/Zx-G9GoJ79404QaUSzrr7C_3Vu3eHL7cQCPcBGAYYCw/s587/kode-warna-resistor-6-gelang.jpg" alt="w2"></li>
+</ul>
+<p>Perbedaan resistor 6 warna ini adalah terdapat nilai toleransi suhu di digit paling akhir. gelang ke-1 menentukan digit pertama, gelang ke-2 menentukan digit kedua, gelang ke-3 menentukan digit ketiga, gelang ke-4 menentukan pengali, gelang ke-5 menentukan toleransi, gelang ke-6 menentukan toleransi suhu.</p>
+</li>
+<li>
+<p>Jenis-Jenis:</p>
+<ul>
+<li>
+<p>Fixed Resistor</p>
+<p>Fixed Resistor adalah jenis Resistor yang memiliki nilai resistansinya tetap. Nilai Resistansi atau Hambatan Resistor ini biasanya ditandai dengan kode warna ataupun kode Angka.
+<img src="https://teknikelektronika.com/wp-content/uploads/2014/10/Simbol-dan-Bentuk-Fixed-Resistor.jpg?x79716" alt="fix"></p>
+<p>Yang tergolong dalam Kategori Fixed Resistor berdasarkan Komposisi bahan pembuatnya diantaranya adalah:</p>
+<ol>
+<li>
+<p>Carbon Composition Resistor (Resistor Komposisi Karbon)</p>
+<p>Resistor jenis Carbon Composistion ini terbuat dari komposisi karbon halus yang dicampur dengan bahan isolasi bubuk sebagai pengikatnya (binder) agar mendapatkan nilai resistansi yang diinginkan. Semakin banyak bahan karbonnya semakin rendah pula nilai resistansi atau nilai hambatannya. Nilai Resistansi yang sering ditemukan di pasaran untuk Resistor jenis Carbon Composistion Resistor ini biasanya berkisar dari 1Ω sampai 200MΩ dengan daya 1/10W sampai 2W.
+<img src="https://4.bp.blogspot.com/-57dtvTTHhQk/XXLpohWVcBI/AAAAAAAADqA/Ta7SI3vyltASzvmyNHRSFHjEY2WarMVFgCK4BGAYYCw/s1600/Gambar-Resistor-Karbon.png" alt="kom"></p>
+</li>
+<li>
+<p>Carbon Film Resistor (Resistor Film Karbon)</p>
+<p>Resistor Jenis Carbon Film ini terdiri dari filem tipis karbon yang diendapkan Subtrat isolator yang dipotong berbentuk spiral. Nilai resistansinya tergantung pada proporsi karbon dan isolator. Semakin banyak bahan karbonnya semakin rendah pula nilai resistansinya. Keuntungan Carbon Film Resistor ini adalah dapat menghasilkan resistor dengan toleransi yang lebih rendah dan juga rendahnya kepekaan terhadap suhu jika dibandingkan dnegan Carbon Composition Resistor. Nilai Resistansi Carbon Film Resistor yang tersedia di pasaran biasanya berkisar diantara 1Ω sampai 10MΩ dengan daya 1/6W hingga 5W. Karena rendahnya kepekaan terhadap suhu, Carbon Film Resistor dapat bekerja di suhu yang berkisar dari -55°C hingga 155°C.
+<img src="https://3.bp.blogspot.com/-E2YXoDnULCU/WBL68GP6vqI/AAAAAAAAAp0/jyBjIU9sFsMH2cvpf1qqaY_PDtvABhmiwCK4B/s1600/Simbol-dan-Bentuk-Fixed-Resistor.jpg" alt="flm"></p>
+</li>
+<li>
+<p>Metal Film Resistor (Resistor Film Logam)</p>
+<p>Metal Film Resistor adalah jenis Resistor yang dilapisi dengan Film logam yang tipis ke Subtrat Keramik dan dipotong berbentuk spiral. Nilai Resistansinya dipengaruhi oleh panjang, lebar  dan ketebalan spiral logam. Secara keseluruhan, Resistor jenis Metal Film ini merupakan yang terbaik diantara jenis-jenis Resistor yang ada (Carbon Composition Resistor dan Carbon Film Resistor).
+<img src="https://3.bp.blogspot.com/-TpSOIVz07Is/WBMAl3a-jgI/AAAAAAAAAqM/QWjFFOOmYWg6pvQ8XHW6ar_m4peA5Z9EACK4B/s1600/Simbol-dan-Bentuk-Fixed-Resistor.jpg" alt="mtl"></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Variable Resistor</p>
+<p>Variable Resistor adalah jenis Resistor yang nilai resistansinya dapat berubah dan diatur sesuai dengan keinginan. Pada umumnya Variable Resistor terbagi menjadi Potensiometer, Rheostat dan Trimpot.
+<img src="https://teknikelektronika.com/wp-content/uploads/2014/10/Simbol-dan-Bentuk-Variable-Resistor.jpg?x79716" alt="vari"></p>
+<ol>
+<li>
+<p>Potensiometer</p>
+<p>Potensiometer merupakan jenis Variable Resistor yang nilai resistansinya dapat berubah-ubah dengan cara memutar porosnya melalui sebuah Tuas yang terdapat pada Potensiometer. Nilai Resistansi Potensiometer biasanya tertulis di badan Potensiometer dalam bentuk kode angka. Pada umumnya, perubahan resistansi pada potensiometer terbagi menjadi 2, yakni linier dan logaritmik. Yang dimaksud dengan perubahan secara linier adalah perubahan nilai resistansinya berbanding lurus dengan arah putaran pengaturnya. Sedangkan, yang dimaksud dengan perubahan secara logaritmik adalah perubahan nilai resistansinya yang didasarkan pada perhitungan logaritmik. Untuk membedakan potensiometer linier dan logaritmik cukup melihat kode huruf yang mana huruf A menandakan potensiometer linier sedangkan huruf B menandakan potensiometer logaritmik.
+<img src="https://2.bp.blogspot.com/-vnsYIADbbyc/WBML2IV0HRI/AAAAAAAAAr0/sBZPp7pmhXc0IknHc_pRLjWR63scfJGgwCK4B/s1600/Potentiometer.jpg" alt="pote"></p>
+</li>
+<li>
+<p>Rheostat</p>
+<p>Rheostat merupakan jenis Variable Resistor yang dapat beroperasi pada Tegangan dan Arus yang tinggi. Rheostat terbuat dari lilitan kawat resistif dan pengaturan Nilai Resistansi dilakukan dengan penyapu yang bergerak pada bagian atas Toroid.
+<img src="https://4.bp.blogspot.com/-VndHyTRtJIY/WBMLkRu1liI/AAAAAAAAAro/i5nQe2mcDTw_Fs_4rT0nlGknEXwVvXe0ACK4B/s1600/Simbol-dan-Bentuk-Variable-Resistor%2B-%2BCopy%2B-%2BCopy.jpg" alt="rheo"></p>
+</li>
+<li>
+<p>Preset Resistor (Trimpot)</p>
+<p>Preset Resistor atau sering juga disebut dengan Trimpot (Trimmer Potensiometer) adalah jenis Variable Resistor yang berfungsi seperti Potensiometer tetapi memiliki ukuran yang lebih kecil dan tidak memiliki Tuas. Untuk mengatur nilai resistansinya, dibutuhkan alat bantu seperti Obeng kecil untuk dapat memutar porosnya. Sifat dan fisik trimpot sebenarnya sama dengan potensiometer yag membedakan ukuran trimpot jauh lebih kecil. Perubahan nilai resistansinya juga dibagi menjadi 2, yakni linier dan logaritmik yang mana huruf A trimpot linier dan huruf B trimpot logaritmik.
+<img src="https://2.bp.blogspot.com/-2dBCtAnbFS4/WBMLZ-RZRBI/AAAAAAAAArg/p3sQ9K1q2LUtvBfaDSkKf-ilI6PZNrWigCK4B/s1600/Trimpot.jpg" alt="trim"></p>
+</li>
+<li>
+<p>Thermistor (Thermal Resistor)</p>
+<p>Thermistor adalah Jenis Resistor yang nilai resistansinya dapat dipengaruhi oleh suhu (Temperature). Thermistor merupakan Singkatan dari “Thermal Resistor”. Terdapat dua jenis Thermistor yaitu Thermistor NTC (Negative Temperature Coefficient) dan Thermistor PTC (Positive Temperature Coefficient).
+<img src="https://teknikelektronika.com/wp-content/uploads/2014/10/Simbol-dan-Bentuk-Thermistor.jpg?x79716" alt="ther"></p>
+</li>
+<li>
+<p>LDR (Light Dependent Resistor)</p>
+<p>LDR adalah jenis Resistor yang nilai hambatan atau nilai resistansinya tergantung pada intensitas cahaya yang diterimanya. Nilai Hambatan LDR akan menurun pada saat cahaya terang dan nilai Hambatannya akan menjadi tinggi jika dalam kondisi gelap. Dengan kata lain, fungsi LDR (Light Dependent Resistor) adalah untuk menghantarkan arus listrik jika menerima sejumlah intensitas cahaya (Kondisi Terang) dan menghambat arus listrik dalam kondisi gelap.
+<img src="https://teknikelektronika.com/wp-content/uploads/2014/10/Simbol-dan-Bentuk-LDR.jpg?x79716" alt="ldr"></p>
+</li>
+</ol>
+</li>
+</ul>
+<p>Baca juga: <a href="https://www.webstudi.site/2016/10/pengertian-resistor-dan-jenis-jenis.html">Cara mengukur resistor menggunakan multimeter</a></p>
+</li>
+</ol>
+<ul>
+<li>KAPASITOR
+<img src="https://teknikelektronika.com/wp-content/uploads/2014/08/Fungsi-Kapasitor.jpg?x79716" alt="kapas"></li>
+</ul>
+<ol>
+<li>
+<p>Pengertian:</p>
+<p>Kapasitor (Capacitor) atau Kondensator (Condensator) adalah komponen elektronika pasif yang dapat menyimpan muatan listrik dalam waktu sementara dengan satuan kapasitansinya adalah Farad. Satuan Kapasitor tersebut diambil dari nama penemunya yaitu Michael Faraday (1791-1867) yang berasal dari Inggris. Namun Farad adalah satuan yang sangat besar, oleh karena itu pada umumnya Kapasitor yang digunakan dalam peralatan elektronika adalah satuan Farad yang dikecilkan menjadi picoFarad, nanoFarad dan microFarad. Komponen-komponen yang termasuk dalam keluarga kapasitor tersebut diantaranya adalah Kapasitor nilai tetap (Keramik, kertas, mika, tantalum dan elektrolit), kapasitor yang nilai dapat diatur kapasitasnya (VARCO dan Trimmer).</p>
+</li>
+<li>
+<p>Fungsi kapasitor dalam rangkaian elektronika:</p>
+<ul>
+<li>Sebagai Penyimpan arus atau tegangan listrik</li>
+<li>Sebagai Konduktor yang dapat melewatkan arus AC (Alternating Current)</li>
+<li>Sebagai Isolator yang menghambat arus DC (Direct Current)</li>
+<li>Sebagai Filter dalam Rangkaian Power Supply (Catu Daya)</li>
+<li>Sebagai Kopling</li>
+<li>Sebagai Pembangkit Frekuensi dalam Rangkaian Osilator</li>
+<li>Sebagai Penggeser Fasa</li>
+<li>Sebagai Pemilih Gelombang Frekuensi (Kapasitor Variabel yang digabungkan dengan Spul Antena dan Osilator)</li>
+</ul>
+</li>
+<li>
+<p>Jenis-Jenis:</p>
+<p>Berdasarkan bahan isolator dan nilainya, kapasitor dapat dibagi menjadi 2 jenis yaitu kapasitor nilai tetap dan kapasitor variabel. Berikut ini penjelasan untuk masing-masing jenis kapasitor:</p>
+<p>A. Kapasitor Nilai Tetap (Fixed Capacitor)</p>
+<p>Kapasitor Nilai Tetap atau Fixed Capacitor adalah kapasitor yang nilainya konstan atau tidak berubah-ubah.
+<img src="https://teknikelektronika.com/wp-content/uploads/2014/08/Kapasitor-Nilai-Tetap.jpg?x79716" alt="kap">.</p>
+<ul>
+<li>Kapasitor Keramik (Ceramic Capasitor)</li>
+</ul>
+<p>Kapasitor keramik adalah kapasitor yang isolatornya terbuat dari keramik dan berbentuk bulat tipis ataupun persegi empat. Kapasitor keramik tidak memiliki arah atau polaritas, jadi dapat dipasang bolak-balik dalam rangkaian elektronika. Pada umumnya, nilai kapasitor keramik berkisar antara 1pf sampai 0.01µF. Kapasitor yang berbentuk chip (Chip Capasitor) umumnya terbuat dari bahan keramik yang dikemas sangat kecil untuk memenuhi kebutuhan peralatan elektronik yang dirancang makin kecil dan dapat dipasang oleh mesin produksi SMT (Surface Mount Technology) yang berkecepatan tinggi.</p>
+<ul>
+<li>Kapasitor Polyester (Polyester Capacitor)</li>
+</ul>
+<p>Kapasitor polyester adalah kapasitor yang isolatornya terbuat dari polyester dengan bentuk persegi empat. Kapasitor polyester dapat dipasang terbalik dalam rangkaian elektronika (tidak memiliki polaritas arah).</p>
+<ul>
+<li>Kapasitor Kertas (Paper Capacitor)</li>
+</ul>
+<p>Kapasitor kertas adalah kapasitor yang isolatornya terbuat dari kertas dan pada umumnya nilai kapasitor kertas berkisar diantara 300pf sampai 4µF. Kapasitor kertas tidak memiliki polaritas arah atau dapat dipasang bolak balik dalam rangkaian elektronika.</p>
+<ul>
+<li>Kapasitor Mika (Mica Capacitor)</li>
+</ul>
+<p>Kapasitor mika adalah kapasitor yang bahan isolatornya terbuat dari bahan mika. Nilai kapasitor mika pada umumnya berkisar antara 50pF sampai 0.02µF. Kapasitor mika juga dapat dipasang bolak balik karena tidak memiliki polaritas arah.</p>
+<ul>
+<li>Kapasitor Elektrolit (Electrolyte Capacitor)</li>
+</ul>
+<p>Kapasitor elektrolit adalah kapasitor yang bahan isolatornya terbuat dari elektrolit (Electrolyte) dan berbentuk tabung / silinder. Kapasitor elektrolit atau disingkat dengan ELCO ini sering dipakai pada rangkaian elektronika yang memerlukan kapasintasi (Capacitance) yang tinggi. Kapasitor elektrolit yang memiliki polaritas arah positif (-) dan negatif (-) ini menggunakan bahan aluminium sebagai pembungkus dan sekaligus sebagai terminal negatif-nya. Pada umumnya nilai kapasitor elektrolit berkisar dari 0.47µF hingga ribuan microfarad (µF). Biasanya di badan kapasitor elektrolit (ELCO) akan tertera nilai kapasitansi, tegangan (Voltage), dan terminal negatif-nya. Hal yang perlu diperhatikan, kapasitor elektrolit dapat meledak jika polaritas (arah) pemasangannya terbalik dan melampui batas kamampuan tegangannya.</p>
+<ul>
+<li>Kapasitor Tantalum</li>
+</ul>
+<p>Kapasitor tantalum juga memiliki polaritas arah positif (+) dan negatif (-) seperti halnya kapasitor elektrolit dan bahan isolatornya juga berasal dari elektrolit. Disebut dengan kapasitor tantalum karena kapasitor jenis ini memakai bahan logam tantalum sebagai terminal anodanya (+). Kapasitor tantalum dapat beroperasi pada suhu yang lebih tinggi dibanding dengan tipe kapasitor elektrolit lainnya dan juga memiliki kapasintansi yang besar tetapi dapat dikemas dalam ukuran yang lebih kecil dan mungil. Oleh karena itu, kapasitor tantalum merupakan jenis kapasitor yang berharga mahal. Pada umumnya dipakai pada peralatan elektronika yang berukuran kecil seperti dihandphone dan laptop.</p>
+<p>B. Kapasitor Variable (Variable Capacitor)</p>
+<p>Kapasitor Variabel adalah kapasitor yang nilai kapasitansinya dapat diatur atau berubah-ubah. Secara fisik kapasitor variabel ini terdiri dari 2 jenis yaitu:
+<img src="https://teknikelektronika.com/wp-content/uploads/2014/08/Kapasitor-Variabel-Variable-Capacitor.jpg?x79716" alt="vari"></p>
+<ul>
+<li>VARCO (Variable Condensator)</li>
+</ul>
+<p>VARCO (Variable Condensator) yang terbuat dari logam dengan ukuran yang lebih besar dan pada umumnya digunakan untuk memilih gelombang frekuensi pada rangkaian radio (digabungkan dengan Spul Antena dan Spul Osilator). Nilai kapasitansi VARCO berkisar antara 100pF sampai 500pF</p>
+<ul>
+<li>Trimmer</li>
+</ul>
+<p>Trimmer adalah jenis kapasitor variabel yang memiliki bentuk lebih kecil sehingga memerlukan alat seperti Obeng untuk dapat memutar poros pengaturnya. Trimmer terdiri dari 2 pelat logam yang dipisahkan oleh selembar mika dan juga terdapat sebuah Screw yang mengatur jarak kedua pelat logam tersebut sehingga nilai kapasitansinya menjadi berubah. Trimmer dalam rangkaian elektronika berfungsi untuk menepatkan pemilihan gelombang frekuensi (Fine Tune). Nilai kapasitansi trimmer hanya maksimal sampai 100pF.</p>
+</li>
+</ol>
+<ul>
+<li>INDUKTOR
+<img src="https://teknikelektronika.com/wp-content/uploads/2014/08/Inductor.jpg?x79716" alt="ind"></li>
+</ul>
+<ol>
+<li>
+<p>Pengertian:</p>
+<p>Induktor atau dikenal juga dengan Coil adalah komponen elektronika pasif yang terdiri dari susunan lilitan kawat yang membentuk sebuah kumparan. Pada dasarnya, induktor dapat menimbulkan Medan Magnet jika dialiri oleh arus listrik. Medan magnet yang ditimbulkan tersebut dapat menyimpan energi dalam waktu yang relatif singkat. Dasar dari sebuah induktor adalah berdasarkan hukum induksi Faraday. Kemampuan induktor atau Coil dalam menyimpan energi magnet disebut dengan induktansi yang satuan unitnya adalah Henry (H). Satuan Henry pada umumnya terlalu besar untuk komponen induktor yang terdapat pada rangkaian elektronika. Oleh karena itu, satuan-satuan yang merupakan turunan dari Henry digunakan untuk menyatakan kemampuan induktansi sebuah induktor atau coil. Satuan-satuan turunan dari Henry tersebut diantaranya adalah milihenry (mH) dan microhenry (µH). Simbol yang digunakan untuk melambangkan induktor dalam rangkaian elektronika adalah huruf “L”.</p>
+</li>
+<li>
+<p>Simbol Induktor:
+<img src="https://teknikelektronika.com/wp-content/uploads/2014/08/Simbol-Induktor.jpg?x79716" alt="sim"></p>
+<p>Nilai Induktansi sebuah Induktor (Coil) tergantung pada 4 faktor, diantaranya adalah :</p>
+<ul>
+<li>Jumlah Lilitan (semakin banyak lilitannya semakin tinggi induktasinya)</li>
+<li>Diameter Induktor (semakin besar diameternya semakin tinggi pula induktansinya)</li>
+<li>Permeabilitas Inti (bahan inti yang digunakan seperti udara, besi ataupun ferit)</li>
+<li>Ukuran Panjang Induktor (semakin pendek inductor (coil) tersebut semakin tinggi induktansinya).</li>
+</ul>
+</li>
+<li>
+<p>Jenis-jenis Induktor (Coil):</p>
+<p>Berdasarkan bentuk dan bahan inti-nya, induktor dapat dibagi menjadi beberapa jenis diantaranya adalah:</p>
+<ul>
+<li>Air Core Inductor (menggunakan udara sebagai intinya)</li>
+<li>Iron Core Inductor (menggunakan bahan besi sebagai intinya)</li>
+<li>Ferrite Core Inductor (menggunakan bahan ferit sebagai intinya)</li>
+<li>Torroidal Core Inductor (menggunakan inti yang berbentuk O ring (bentuk donat))</li>
+<li>Laminated Core Induction (menggunakan inti yang terdiri dari beberapa lapis lempengan logam yang ditempelkan secara paralel, masing-masing lempengan logam diberikan isolator)</li>
+<li>Variable Inductor (induktor yang nilai induktansinya dapat diatur sesuai dengan keinginan, inti dari variable inductor pada umumnya terbuat dari bahan ferit yang dapat diputar-putar).</li>
+</ul>
+</li>
+<li>
+<p>Fungsi Induktor (Coil) dan Aplikasinya:</p>
+<p>Fungsi-fungsi induktor atau Coil diantaranya adalah dapat menyimpan arus listrik dalam medan magnet, menapis (filter) frekuensi tertentu, menahan arus bolak-balik (AC), meneruskan arus searah (DC) dan pembangkit getaran serta melipatgandakan tegangan. Berdasarkan fungsi diatas, induktor atau Coil ini pada umumnya diaplikasikan:</p>
+<ul>
+<li>Sebagai filter dalam rangkaian yang berkaitan dengan frekuensi</li>
+<li>Transformator (transformer)</li>
+<li>Motor listrik</li>
+<li>Solenoid</li>
+<li>Relay</li>
+<li>Speaker</li>
+<li>Microphone</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+
+    </section>
+</article>
+<section class="read-more">
+    
+
+
+    
+    <div class="read-more-item">
+        <span class="read-more-item-dim">更早的文章</span>
+        <h2 class="post-list__post-title post-title"><a href="/blog/2021/07/hello-world-vno/" title="link to Hello World Vno">Hello World Vno</a></h2>
+        <p class="excerpt">What&rsquo;s this Vno Hugo is a theme for Hugo. It is a port of onevcat&rsquo;s Vno Jekyll, which is originally developed from Dale Anthony&rsquo;s Uno.
+Usage Inside the folder of your Hugo site run:
+$ git submodule add …&hellip;</p>
+        <div class="post-list__meta">
+            <time datetime=" 2021-08-26 16:02:08 &#43;0700" class="post-list__meta--date date">2021-07-19</time>
+             <span class="post-list__meta--tags tags">• Say Hi  • Vno</span> 
+            <a class="btn-border-small" href="/blog/2021/07/hello-world-vno/">继续阅读</a></div>
+        </div>
+    
+ </section>
+  
+<section class="post-comments">
+    
+      <div id="disqus_thread"></div>
+      <script>
+      
+      var disqus_config = function () {
+          this.page.url = "https:\/\/syouryuumaru.github.io\/blog\/2021\/08\/komponen-aktif-dan-komponen-pasif-elektronika\/";
+          this.page.identifier = "https:\/\/syouryuumaru.github.io\/blog\/2021\/08\/komponen-aktif-dan-komponen-pasif-elektronika\/";
+      };
+  
+      var disqus_shortname = 'vno-hugo';
+      
+      (function() { 
+          var d = document, s = d.createElement('script');
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+          })();
+      </script>
+      <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
+      
+    
+
+    
+    
+  </section>
+  
+
+        <section class="footer">
+    <footer>
+        <span class="footer__copyright">本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a></span>
+        <span class="footer__copyright">由 <a href="https://gohugo.io/">Hugo</a> 于 2021-09-14 生成，采用<a href="https://github.com/xslingcn/vno-hugo"> Vno - Hugo </a>作为主题</span>
+    </footer>
+</section>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script><script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'your_ga_id', 'your_host');
+    ga('send', 'pageview');
+</script>
+
+  
+</body>
+
